@@ -93,6 +93,7 @@ background-image: url(fake_emily.png);
 }
 
 .img-size {
+  /*margin: 2px;*/
   height: 200px;
   width: 200px;
 
@@ -132,12 +133,46 @@ background-image: url(fake_emily.png);
     padding: 100px 0;
     color: #fff;
 }
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-    width: 20%;
-    margin: auto;
+
+.up {
+  position: relative;
+  bottom: 15px;
+  /*margin: 2px;*/
 }
-.carousel-control.left  {
-  background-image: none !important;
-  background-color: pink;
+
+.down {
+  position: relative;
+  top: 15px;
+  /*margin: 20px;*/
 }
+
+/*#demo {
+position: relative;
+max-width: 100%;
+width: 50%;
+}
+img {
+width: 50%;
+max-width: 100%;
+height: 50%;
+}
+.white-panel {
+position: absolute;
+background: white;
+box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+padding: 10px;
+}
+.white-panel h1 {
+font-size: 1em;
+}
+.white-panel h1 a {
+color: #A92733;
+}
+.white-panel:hover {
+box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+margin-top: -5px;
+-webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+}*/
