@@ -1,0 +1,143 @@
+
+
+/*cover photo*/
+section.jumbotron {
+    /*position: relative;
+    background: blue url("http://i.imgur.com/dRxnay8.jpg") center center;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    overflow: hidden;*/
+    background: url(salon.png) 50% 0 no-repeat fixed;
+    height: 620px;
+    width: 100%;
+    margin: 0px;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 100px 0;
+
+
+
+}
+#title {
+  font-size: 6.9em;
+  /*font-family: 'Quicksand', sans-serif;*/
+  /*font-family: 'Raleway', sans-serif;*/
+  /*text-shadow: 1px 1px 3px #333333;*/
+  color: #ffffff;
+position: relative;
+/*bottom: 130px;*/
+left: 350px;
+  }
+
+
+nav.navbar-default {
+  border-color: white;
+  margin: 0px;
+
+}
+
+/*title text white*/
+ .white {
+  color: white;
+}
+
+/*MAKING NAV CONTENT CENTERED*/
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+  background-color: white;
+
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+  background-color: white;
+}
+
+ ul.navbar-nav li a h3 {
+padding: 0px 20px 0px 20px;
+font-family: 'Raleway', sans-serif;
+color: #FADEF2;
+}
+
+.container-fluid {
+  background-color: white;
+
+}
+
+
+#gallery{
+height: 500px;
+background-image: url(fake_emily.png);
+}
+
+.title-gallery {
+  color: white;
+  font-size: 5.0em;
+  padding-top: 20%;
+  position: static;
+}
+
+.gallery-titles{
+  font-family: 'Raleway', sans-serif;
+  color: #FADEF2;
+  font-size: 3em;
+  margin: 5%;
+
+}
+#p {
+
+  font-size: 0.5em;
+}
+
+.img-size {
+  height: 200px;
+  width: 200px;
+
+}
+
+/*.center-block {
+  margin: 5px;
+}*/
+/*.gallery-color {
+  margin: auto 10% auto 10%;
+}*/
+/*#intro {
+    background: url(http://i.imgur.com/bIRGzVO.jpg) 50% 0 no-repeat fixed;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    /*box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
+    /*padding: 100px 0;
+}*/
+#home {
+    background: url(http://i.imgur.com/zDnaFzA.jpg) 50% 0 no-repeat fixed;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    /*box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
+    padding: 200px 0;
+}
+#about {
+    background: url(http://i.imgur.com/U7vFDsE.jpg) 100% 0 no-repeat fixed;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    /*box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
+    padding: 100px 0;
+    color: #fff;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 20%;
+    margin: auto;
+}
+.carousel-control.left  {
+  background-image: none !important;
+  background-color: pink;
+}
