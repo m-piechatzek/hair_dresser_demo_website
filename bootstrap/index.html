@@ -18,24 +18,19 @@
 
  </head>
   <body>
-    <!-- <script>
-$(document).ready(function() {
-$('#demo').pinterest_grid({
-no_columns: 4,
-padding_x: 10,
-padding_y: 10,
-margin_bottom: 50,
-single_column_breakpoint: 700
-});
-});
-</script> -->
+    <script>
+    // $("#pop").on("click", function() {
+    //    $('#imagepreview').attr('src', $('#imageresource').attr('src')); // here asign the image to the modal when the user click the enlarge link
+    //    $('#imagemodal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+    // });
+</script>
 
 
 
     <section class="jumbotron" data-speed="6" data-type="background">
       <div class="container title-position">
         <h1 id="title">EMILY HILTON</h1>
-        <p class="white">Junior Stylist</p>
+        <p class="white">Junior Stylist @ Space Salon</p>
 
       </div>
     </section>
@@ -81,7 +76,7 @@ single_column_breakpoint: 700
     <!-- <img class="line" src="pink-divider.png" alt="" /> -->
     COLORS
     <p id="p" class="gallery-subtitles">
-      Currently showing all work done by Emily Hilton
+      All images are found on google and are not my property
     </p>
         <!-- <img class="line" src="pink-divider.png" alt="" /> -->
   </div>
@@ -152,13 +147,118 @@ single_column_breakpoint: 700
     <!-- <img class="line" src="pink-divider.png" alt="" /> -->
     CUTS
     <p id="p" class="gallery-subtitles">
-      Currently showing all work done by Emily Hilton
+      All images are found on google and are not my property
     </p>
         <!-- <img class="line" src="pink-divider.png" alt="" /> -->
   </div>
   <!-- <i class="fa fa-paint-brush fa-1x"></i> -->
 
 </section>
+
+<div class="row ">
+  <div class="container">
+
+  <img class= "img-thumbnail img-size up" src="cut1.jpg" alt="" />
+  <img class= "img-thumbnail img-size down" src="cut2.jpg" alt="" />
+
+
+  <img class= "img-thumbnail img-size up" src="cut3.jpg" alt="" />
+  <img class= "img-thumbnail img-size down" src="cut4.jpg" alt="" />
+
+
+
+
+  <img class= "img-thumbnail img-size up" src="cut5.jpg" alt="" />
+  <img class= "img-thumbnail img-size up" src="cut6.jpg" alt="" />
+  <img class= "img-thumbnail img-size down" src="cut7.jpg" alt="" />
+  <img class= "img-thumbnail img-size up" src="cut8.jpg" alt="" />
+
+
+
+</div>
+
+</div>
+</div>
+<section id="colors" class="gallery-titles text-center">
+  <i class="fa fa-magic fa-1x"></i>
+  <div class="container">
+    <!-- <img class="line" src="pink-divider.png" alt="" /> -->
+    OMBRE & UNIQUE STYLES
+    <p id="p" class="gallery-subtitles">
+      All images are found on google and are not my property
+    </p>
+        <!-- <img class="line" src="pink-divider.png" alt="" /> -->
+  </div>
+  <!-- <i class="fa fa-paint-brush fa-1x"></i> -->
+
+</section>
+<div class="row">
+  <div class="container">
+      <img class= "img-thumbnail img-size up" src="om1.jpg" alt="" />
+        <img class= "img-thumbnail img-size down" src="om2.jpg" alt="" />
+          <img class= "img-thumbnail img-size up" src="om3.jpg" alt="" />
+            <img class= "img-thumbnail img-size down" src="om4.jpg" alt="" />
+              <img class= "img-thumbnail img-size up" src="sil1.jpg" alt="" />
+                <img class= "img-thumbnail img-size up" src="sil2.jpg" alt="" />
+                  <img class= "img-thumbnail img-size down" src="sil3.jpg" alt="" />
+                    <img class= "img-thumbnail img-size up" src="buzz1.jpg" alt="" />
+                      <img class= "img-thumbnail img-size down" src="buzz2.jpg" alt="" />
+                        <img class= "img-thumbnail img-size up" src="buzz3.jpg" alt="" />
+
+  </div>
+
+</div>
+
+<section id="colors" class="gallery-titles text-center">
+  <i class="fa fa-star fa-1x"></i>
+  <div class="container">
+    <!-- <img class="line" src="pink-divider.png" alt="" /> -->
+    EVENT STYLES
+    <p id="p" class="gallery-subtitles">
+      All images are found on google and are not my property
+    </p>
+        <!-- <img class="line" src="pink-divider.png" alt="" /> -->
+  </div>
+</section>
+
+
+<div class="row">
+  <div class="container">
+    <img class= "img-thumbnail img-size up" src="eve1.jpg" alt="" />
+      <img class= "img-thumbnail img-size down" src="eve2.jpg" alt="" />
+        <img class= "img-thumbnail img-size up" src="eve3.jpg" alt="" />
+          <img class= "img-thumbnail img-size down" src="eve4.jpg" alt="" />
+            <img class= "img-thumbnail img-size up" src="eve5.jpg" alt="" />
+
+  </div>
+
+</div>
+
+<!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
 
 
 
@@ -221,20 +321,40 @@ single_column_breakpoint: 700
 
 
 <!-- Section 2 -->
-<section id="home" data-speed="6" data-type="background">
+<!-- <section id="home" data-speed="6" data-type="background">
     <div class="container">
         More content goes here!
     </div>
 </section>
-<!-- Section 3 -->
-<section id="about" data-speed="6" data-type="background">
+Section 3 -->
+<!-- <section id="about" data-speed="6" data-type="background">
     <div class="container">
         This is the final section!
     </div>
 </section>
 
 <h1>trevy</h1>
-<h1>trevy</h1>
+<h1>trevy</h1> -->
+<footer>
+  <div class="container">
+<div class="col-md-3">
+528 West Broadway
+Vancouver, BC
+V5Z 1E9
+
+604.681.1444
+
+emily@spacesalon.com
+</div>
+<div class="col-md-9 text-right">
+  <h2 class="text-right">Emily Hilton @ Space Salon</h2>
+<p>
+  Book your appointment through Space Salon
+</p>
+insta
+</div>
+  </div>
+</footer>
 
 
 

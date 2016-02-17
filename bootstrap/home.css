@@ -71,6 +71,7 @@ color: #FADEF2;
 #gallery{
 height: 500px;
 background-image: url(fake_emily.png);
+background-repeat: no-repeat;
 }
 
 .title-gallery {
@@ -97,6 +98,10 @@ background-image: url(fake_emily.png);
   height: 200px;
   width: 200px;
 
+}
+
+.pink {
+  background-color: pink;
 }
 
 /*.center-block {
@@ -144,6 +149,12 @@ background-image: url(fake_emily.png);
   position: relative;
   top: 15px;
   /*margin: 20px;*/
+}
+
+footer {
+  background-color: #FADEF2;
+  font-family: 'Raleway', sans-serif;
+  color: white;
 }
 
 /*#demo {
