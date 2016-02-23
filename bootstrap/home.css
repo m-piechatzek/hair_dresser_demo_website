@@ -1,5 +1,6 @@
-.row {
-  background-color: #e7d2c8;
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 /*cover photo*/
 section.jumbotron {
@@ -9,7 +10,7 @@ section.jumbotron {
     height: 500px;
     background-size: cover;
     overflow: hidden;*/
-    background: url(salon.png) 50% 0 no-repeat fixed;
+    background: url(cover-finish.png) 50% 0 no-repeat fixed;
     height: 620px;
     width: 100%;
     margin: 0px;
@@ -28,7 +29,13 @@ section.jumbotron {
   color: #ffffff;
 position: relative;
 /*bottom: 130px;*/
-left: 350px;
+left: 550px;
+  }
+  .subtitle {
+    color: #ffffff;
+  position: relative;
+  /*bottom: 130px;*/
+  left: 880px;
   }
 
 
@@ -67,9 +74,11 @@ color: #FADEF2;
   background-color: white;
 
 }
+.text-style {
+  font-family: 'Raleway', sans-serif;
+}
 
-
-#gallery{
+/*#gallery{
 height: 500px;
 background-image: url(fake_emily.png);
 background-repeat: no-repeat;
@@ -80,8 +89,45 @@ background-repeat: no-repeat;
   font-size: 5.0em;
   padding-top: 20%;
   position: static;
+}*/
+.mini-color, .mini-cut, .mini-uni, .mini-eve {
+  color: white;
+  margin: 50px auto 50px auto;
+  /*height: 300px;
+  width: 300px;*/
+/*background-image: url(cut-banner-small.jpg);*/
+-webkit-animation-delay: 0.7s;
+-moz-animation-delay: 0.7s;
+animation-delay: 0.7s;
+background-repeat: no-repeat;
+background-position: center;
+background-size: 400px 300px;
+}
+.sis {
+  margin: 100px 50px 150px 50px;
 }
 
+.mini-cut {
+background-image: url(cut-banner-small.png);
+background-repeat: no-repeat;
+background-position: center;
+}
+.mini-color {
+  background-image: url(color-banner-small.png);
+}
+
+.fade {
+
+  opacity: 0;
+}
+
+.mini-uni {
+  background-image: url(hipster-small.png);
+
+}
+.mini-eve {
+  background-image: url(event-banner-small.png);
+}
 .gallery-titles{
   font-family: 'Raleway', sans-serif;
   color: #FADEF2;
@@ -89,12 +135,14 @@ background-repeat: no-repeat;
   margin: 5%;
 
 }
+
+
 section.container-size {
   /*width: auto;
   height: 200px;*/
   color: white;
 
-  background: url(background-test.png) 50% 0 no-repeat fixed;
+  background: url(event-banner.png) 50% 0 no-repeat fixed;
   height: 400px;
   width: 100%;
   margin: 75px 0px 75px 0px;
@@ -109,7 +157,7 @@ section.container-size2 {
   height: 200px;*/
   color: white;
 
-  background: url(hipster.png) 50% 0 no-repeat fixed;
+  background: url(hipster-banner.png) 50% 0 no-repeat fixed;
   height: 400px;
   width: 100%;
   margin: 75px 0px 75px 0px;
@@ -131,7 +179,19 @@ section.container-size3 {
   box-shadow: 0 0 50px rgba(0,0,0,0.8);
   padding: 100px 0;
 }
+section.container-size4 {
+  /*width: auto;
+  height: 200px;*/
+  color: white;
 
+  background: url(color-banner.png) 50% 0 no-repeat fixed;
+  height: 400px;
+  width: 100%;
+  margin: 75px 0px 75px 0px;
+  position: relative;
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  padding: 100px 0;
+}
 #p {
 
   font-size: 0.5em;
@@ -198,7 +258,7 @@ section.container-size3 {
 
 /*FOOTER*/
 #footer {
-  background-color: #FADEF2;
+  background-color: #262626;
   font-family: 'Raleway', sans-serif;
   color: white;
   padding-top: 5px;
@@ -210,7 +270,10 @@ section.container-size3 {
   height: 60px;
   margin: 9px;
 }
-
+.insta {
+  background-color: white;
+  opacity: .5;
+}
 
 .para-top {
 color: black;

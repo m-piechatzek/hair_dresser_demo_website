@@ -15,7 +15,7 @@
 
 <link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
  </head>
   <body>
     <script>
@@ -30,7 +30,7 @@
     <section class="jumbotron" data-speed="6" data-type="background">
       <div class="container title-position">
         <h1 id="title">EMILY HILTON</h1>
-        <p class="white">Junior Stylist @ Space Salon</p>
+          <p class="subtitle">JUNIOR STYLIST AT SPACE SALON</p>
 
       </div>
     </section>
@@ -61,16 +61,83 @@
       </div><!-- /.container-fluid -->
     </nav>
     <!-- Section 1 -->
-<section id="gallery" class="text-center">
+<!-- <section id="gallery" class="text-center">
     <div class="container">
       <div class="pull-right title-gallery">
         EMILY'S GALLERY
       </div>
     </div>
-</section>
+</section> -->
+<script>
+$(document).ready(function () {
+  // $("#mini-color").fadeIn(3000);
+  // $('#mini-color').fadeIn(1500).removeClass('hidden');
+
+  $(window).on("load",function() {
+    function fade() {
+      $('.fade').each(function() {
+        /* Check the location of each desired element */
+        var objectBottom = $(this).offset().top + $(this).outerHeight();
+        var windowBottom = $(window).scrollTop() + $(window).innerHeight();
+
+        /* If the object is completely visible in the window, fade it in */
+        if (objectBottom < windowBottom) {
+          if ($(this).css('opacity')==0) {$(this).fadeTo(1000,1);}
+        }
+      });
+    }
+    fade(); //Fade in completely visible elements during page-load
+    $(window).scroll(function() {fade();}); //Fade in elements during scroll
+  });
+
+});
+</script>
+
+<!-- <section> -->
+  <div class="row text-center">
+    <div class="col-md-6 mini-color fade" id="mini-color">
+      <div class="sis">
+  <i class="fa fa-paint-brush fa-4x"></i>
+  <p>
+    <h2 class="text-style">COLOR STYLES</h2>
+  </p>
+    </div>
+    </div>
+    <div class="col-md-6 mini-cut fade">
+      <div class="sis">
+
+      <i class="fa fa-scissors fa-4x"></i>
+      <p>
+        <h2 class="text-style">CUT STYLES</h2>
+      </p>
+    </div>
+    </div>
+  </div> <!--end row -->
+
+  <div class="row text-center">
+
+    <div class="col-md-6 mini-uni fade">
+      <div class="sis">
+      <i class="fa fa-magic fa-4x"></i>
+      <p>
+        <h2 class="text-style">OMBRE & UNIQUE STYLES</h2>
+      </p>
+    </div>
+    </div>
+    <div class="col-md-6 mini-eve fade">
+      <div class="sis">
+      <i class="fa fa-star fa-4x"></i> <br>
+      <p>
+        <h2 class="text-style">EVENT STYLES</h2>
+      </p>
+
+    </div>
+</div>
+</div> <!-- end row -->
+<!-- </section> -->
 
 <!-- SECTION COLORS -->
-<section id="colors" class="gallery-titles text-center">
+<section id="colors" class="gallery-titles text-center container-size4">
   <i class="fa fa-paint-brush fa-1x"></i>
   <div class="container">
     <!-- <img class="line" src="pink-divider.png" alt="" /> -->
@@ -90,15 +157,20 @@
 <div class="row center">
 <div class="container">
 
-<section class="gallery-color">
+<section class="gallery-color ">
 
 
   <!-- <img class= "img-thumbnail img-size" src="blonde1.jpg" alt="" /> -->
+<div class="fade">
+
     <img class= "img-thumbnail img-size up" src="blond2.jpg" alt="" />
       <img class= "img-thumbnail img-size down" src="blonde3.jpg" alt="" />
         <img class= "img-thumbnail img-size up" src="blonde4.jpg" alt="" />
           <img class= "img-thumbnail img-size down" src="blonde5.jpg" alt="" />
             <img class= "img-thumbnail img-size up" src="blonde6.jpg" alt="" />
+          </div>
+          <div class="fade">
+
               <img class= "img-thumbnail img-size up" src="blonde7.jpg" alt="" />
 
 <!-- </section> -->
@@ -113,6 +185,9 @@
         <img class= "img-thumbnail img-size up" src="bru2.jpg" alt="" />
 <img class= "img-thumbnail img-size down" src="bru3.jpg" alt="" />
           <img class= "img-thumbnail img-size up" src="bru4.jpg" alt="" />
+        </div>
+        <div class="fade">
+
             <img class= "img-thumbnail img-size up" src="bru5.jpg" alt="" />
               <img class= "img-thumbnail img-size down" src="bru6.jpeg" alt="" />
                 <img class= "img-thumbnail img-size up" src="bru7.jpg" alt="" />
@@ -129,9 +204,13 @@
 
       <img class= "img-thumbnail img-size down" src="red1.jpg" alt="" />
         <img class= "img-thumbnail img-size up" src="red2.jpg" alt="" />
+      </div>
+      <div class="fade">
+
         <img class= "img-thumbnail img-size up" src="red3.jpg" alt="" />
           <img class= "img-thumbnail img-size down" src="red4.jpg" alt="" />
             <img class= "img-thumbnail img-size up" src="red5.jpg" alt="" />
+          </div>
 
   </section>
 </div>
@@ -380,14 +459,17 @@ Section 3 -->
           <p class="foot-text">
             Book your appointment through Space Salon
           </p>
-            <img class="img-size-foot" src="insta.png" alt="" />
+            <!-- <img class="img-size-foot" src="insta.png" alt="" /> -->
+            <!-- <div class="img-circle insta"> -->
+
+            <i class="fa fa-instagram fa-3x "></i>
+          <!-- </div> -->
       </div>
     </div><!--row end-->
   </div>
 </footer>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/pinterest_grid.js"></script>
 
