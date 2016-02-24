@@ -51,6 +51,9 @@ nav.navbar-default {
 }
 
 /*MAKING NAV CONTENT CENTERED*/
+.navbar {
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
@@ -67,9 +70,9 @@ nav.navbar-default {
  ul.navbar-nav li a h3 {
 padding: 0px 20px 0px 20px;
 font-family: 'Raleway', sans-serif;
-color: #FADEF2;
+color: #262626;
 }
-
+/*FADEF2*/
 .container-fluid {
   background-color: white;
 
@@ -96,12 +99,13 @@ background-repeat: no-repeat;
   /*height: 300px;
   width: 300px;*/
 /*background-image: url(cut-banner-small.jpg);*/
--webkit-animation-delay: 0.7s;
+/*-webkit-animation-delay: 0.7s;
 -moz-animation-delay: 0.7s;
-animation-delay: 0.7s;
+animation-delay: 0.7s;*/
 background-repeat: no-repeat;
 background-position: center;
 background-size: 400px 300px;
+
 }
 .sis {
   margin: 100px 50px 150px 50px;
@@ -109,11 +113,17 @@ background-size: 400px 300px;
 
 .mini-cut {
 background-image: url(cut-banner-small.png);
-background-repeat: no-repeat;
-background-position: center;
+
+
 }
 .mini-color {
   background-image: url(color-banner-small.png);
+  /*margin-left: 0px;*/
+
+
+}
+.display {
+    display: none;
 }
 
 .fade {

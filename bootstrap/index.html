@@ -30,7 +30,10 @@
     <section class="jumbotron" data-speed="6" data-type="background">
       <div class="container title-position">
         <h1 id="title">EMILY HILTON</h1>
-          <p class="subtitle">JUNIOR STYLIST AT SPACE SALON</p>
+          <p class="subtitle">JUNIOR STYLIST AT <strong>SPACE SALON</strong></p>
+          <p>
+
+          </p>
 
       </div>
     </section>
@@ -73,16 +76,24 @@ $(document).ready(function () {
   // $("#mini-color").fadeIn(3000);
   // $('#mini-color').fadeIn(1500).removeClass('hidden');
 
+
   $(window).on("load",function() {
     function fade() {
-      $('.fade').each(function() {
+      $('.fade, .display').each(function() {
         /* Check the location of each desired element */
         var objectBottom = $(this).offset().top + $(this).outerHeight();
         var windowBottom = $(window).scrollTop() + $(window).innerHeight();
 
         /* If the object is completely visible in the window, fade it in */
         if (objectBottom < windowBottom) {
-          if ($(this).css('opacity')==0) {$(this).fadeTo(1000,1);}
+          if ($(this).css('opacity')==0)
+           {
+             $(this).fadeTo(1000,1);
+           }
+          if($(this).css('display')=='none')
+        {
+          $(this).stop().slideDown(2000);
+        }
         }
       });
     }
@@ -90,33 +101,39 @@ $(document).ready(function () {
     $(window).scroll(function() {fade();}); //Fade in elements during scroll
   });
 
+
+
+
 });
 </script>
 
 <!-- <section> -->
-  <div class="row text-center">
-    <div class="col-md-6 mini-color fade" id="mini-color">
+  <div class="row text-center"> <!--row-->
+    <div class="container">
+    <div class="col-md-6 mini-color display" id="mini-color">
+
       <div class="sis">
-  <i class="fa fa-paint-brush fa-4x"></i>
-  <p>
-    <h2 class="text-style">COLOR STYLES</h2>
-  </p>
-    </div>
+        <i class="fa fa-paint-brush fa-4x"></i>
+          <p>
+            <h2 class="text-style">COLOR STYLES</h2>
+          </p>
+      </div>
     </div>
     <div class="col-md-6 mini-cut fade">
       <div class="sis">
-
-      <i class="fa fa-scissors fa-4x"></i>
-      <p>
-        <h2 class="text-style">CUT STYLES</h2>
-      </p>
+        <i class="fa fa-scissors fa-4x"></i>
+          <p>
+            <h2 class="text-style">CUT STYLES</h2>
+          </p>
+      </div>
     </div>
-    </div>
+  </div>
   </div> <!--end row -->
 
   <div class="row text-center">
+    <div class="container">
 
-    <div class="col-md-6 mini-uni fade">
+    <div class="col-md-6 mini-uni">
       <div class="sis">
       <i class="fa fa-magic fa-4x"></i>
       <p>
@@ -124,7 +141,7 @@ $(document).ready(function () {
       </p>
     </div>
     </div>
-    <div class="col-md-6 mini-eve fade">
+    <div class="col-md-6 mini-eve">
       <div class="sis">
       <i class="fa fa-star fa-4x"></i> <br>
       <p>
@@ -132,6 +149,7 @@ $(document).ready(function () {
       </p>
 
     </div>
+</div>
 </div>
 </div> <!-- end row -->
 <!-- </section> -->
@@ -423,7 +441,7 @@ Section 3 -->
       <!-- FIRST COLUMN -->
       <div class="col-md-4 col-xs-4 column">
             <ul class="nav footer-right">
-            <h2>Site Map</h2>
+            <h2></h2>
             <li><a href="#">Services</a></li>
             <li><a href="index.html">Gallery</a></li>
             <li><a href="#">Contact</a></li>
@@ -444,10 +462,16 @@ Section 3 -->
           </li>
           <li>
             <img class="img-size-foot" src="phone.png" alt="" />
+
+
+            <!-- <i class="fa fa-phone fa-3x"></i> -->
+
               <span class="foot-text">604.681.1444</span>
           </li>
           <li class="loca">
             <img class="img-size-foot loca" src="envo.png" alt="" />
+            <!-- <i class="fa fa-envelope fa-3x"></i><br> -->
+
               <span class="foot-text">emily@spacesalon.com</span>
           </li>
         </ul>
@@ -462,7 +486,13 @@ Section 3 -->
             <!-- <img class="img-size-foot" src="insta.png" alt="" /> -->
             <!-- <div class="img-circle insta"> -->
 
-            <i class="fa fa-instagram fa-3x "></i>
+            <i class="fa fa-instagram fa-3x "></i>&nbsp;&nbsp;
+            <i class="fa fa-facebook fa-3x"></i>&nbsp;&nbsp;
+            <i class="fa fa-twitter fa-3x"></i>&nbsp;&nbsp;
+            <i class="fa fa-linkedin fa-3x"></i>
+
+
+
           <!-- </div> -->
       </div>
     </div><!--row end-->
