@@ -24,18 +24,38 @@ section.jumbotron {
 #title {
   font-size: 6.9em;
   /*font-family: 'Quicksand', sans-serif;*/
-  /*font-family: 'Raleway', sans-serif;*/
+  font-family: 'Raleway', sans-serif;
   /*text-shadow: 1px 1px 3px #333333;*/
   color: #ffffff;
 position: relative;
 /*bottom: 130px;*/
 left: 550px;
   }
-  .subtitle {
+  #subtitle {
     color: #ffffff;
   position: relative;
-  /*bottom: 130px;*/
-  left: 880px;
+  font-family: 'Raleway', sans-serif;
+  left: 750px;
+  font-size: 2em;
+  }
+  .subtitle-group {
+    /*position: relative;*/
+      font-family: 'Raleway', sans-serif;
+  color: #ffffff;
+    /*left: 500px;*/
+    float: right;
+    position: relative;
+    top: 255px;
+    left: 50px;
+
+  }
+  .subtitle-bottom {
+      font-family: 'Raleway', sans-serif;
+    position: relative;
+    top: 255px;
+  color: #ffffff;
+    left: 500px;
+    font-size: 1.4em;
   }
 
 
@@ -315,6 +335,10 @@ ul.footer-right li a:hover {
   background-color: #FADEF2;
 }
 
+.black {
+  color: #262626;
+}
+
 .img-circle {
     background-color: rgba(255, 255, 255, 0.4);
     width: 60px;
@@ -324,9 +348,14 @@ ul.footer-right li a:hover {
 .foot-text {
   font-size: 1.4em;
 }
+.img-size-full {
+  width: 300px;
+  height: 500px;
+}
 
-
-
+.fa-instagram, .fa-facebook {
+  color: white;
+}
 /*.loca {
 float: left;
 }*/
