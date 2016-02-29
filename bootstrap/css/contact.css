@@ -7,6 +7,11 @@ html, body {
     overflow-x: hidden;
 
 }
+body {
+background-repeat: no-repeat;
+      background-image: url(../contact-background.png);
+      background-size: auto;
+}
 
 /*GLOBAL END*/
 
@@ -42,8 +47,38 @@ color: #262626;
 }
 /*NAVBAR END*/
 
+.box {
+  width: 500px;
+  height: 350px;
+  background-color: yellow;
+}
+
+/*.row {
+  background-image: url(contact-background.png);
+}*/
+
+/*MAP*/
+iframe {
+  margin-left: 3%;
+}
+/*MAP END*/
+
+/*HOURS LIST*/
+
+.hours {
+  list-style: none;
+padding-left: 0px;
+
+}
+
+.text-size {
+  font-size: 1.2em;
+}
 
 
+
+
+/*HOURS LIST END*/
 
 
 
@@ -58,6 +93,7 @@ color: #262626;
   color: white;
   padding-top: 5px;
   height: auto;
+  margin-top: 140px;
 }
 .img-size-foot {
   background-color: rgba(255, 255, 255, 0.4);
