@@ -8,6 +8,15 @@ html, body {
 
 }
 
+/*body {
+background-repeat: no-repeat;
+      background-image: url(../about.png);
+      background-size: contain;
+}*/
+.text-style {
+  font-family: 'Raleway', sans-serif;
+}
+
 /*GLOBAL END*/
 
 /*NAVBAR*/
